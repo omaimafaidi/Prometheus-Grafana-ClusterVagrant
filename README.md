@@ -3,8 +3,8 @@ curl -o helm-v3.10.3-linux-amd64.tar.gz https://get.helm.sh/helm-v3.10.3-linux-a
 # Modifier les permissions
 chmod 777 helm-v3.10.3-linux-amd64.tar.gz
 # Extraire les fichiers
-tar -zxvf helm-v3.10.3-linux-amd64.tar.gz
-mv linux-amd64/helm /usr/local/bin/helm
+tar -zxvf helm-v3.10.3-linux-amd64.tar.gz  <br>
+mv linux-amd64/helm /usr/local/bin/helm  <br>
 ll /usr/local/bin/helm
 # Vérifier la version de Helm
 helm version

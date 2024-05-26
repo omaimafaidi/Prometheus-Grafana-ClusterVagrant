@@ -23,7 +23,7 @@ kubectl create namespace monitoring
 helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring
 # Vérifier les pods déployés dans le namespace 'monitoring'
 kubectl get pods --namespace=monitoring
-# Éditer le service Grafana 
+# Éditer le service Grafana type: ClusterIP avec type: NodePort
 kubectl edit svc --namespace monitoring prometheus-grafana
-# Éditer le service Prometheus
+# Éditer le service Prometheus type: ClusterIP avec type: NodePort
 kubectl edit svc --namespace monitoring prometheus-kube-prometheus-prometheus

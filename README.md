@@ -13,8 +13,8 @@ export PATH=$PATH:/usr/local/bin
 helm version
 # Installer Prometheus et Grafana #
 # Ajouter le dépôt Helm pour les charts Prometheus
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm repo add stable https://charts.helm.sh/stable
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts <br>
+helm repo add stable https://charts.helm.sh/stable <br>
 # Mettre à jour les dépôts Helm pour s'assurer que nous avons la dernière version des charts disponibles
 helm repo update
 # Créer un namespace 'monitoring' 

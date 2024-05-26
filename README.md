@@ -4,8 +4,10 @@ curl -o helm-v3.10.3-linux-amd64.tar.gz https://get.helm.sh/helm-v3.10.3-linux-a
 chmod 777 helm-v3.10.3-linux-amd64.tar.gz
 # Extraire les fichiers
 tar -zxvf helm-v3.10.3-linux-amd64.tar.gz
+mv linux-amd64/helm /usr/local/bin/helm
+ll /usr/local/bin/helm
 # Vérifier la version de Helm
-./linux-amd64/helm version --template='Version: {{.Version}}'
+helm version
 # Installer Prometheus et Grafana #
 # Ajouter le dépôt Helm pour les charts Prometheus
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts

@@ -5,7 +5,10 @@ chmod 777 helm-v3.10.3-linux-amd64.tar.gz
 # Extraire les fichiers
 tar -zxvf helm-v3.10.3-linux-amd64.tar.gz  <br>
 mv linux-amd64/helm /usr/local/bin/helm  <br>
-ll /usr/local/bin/helm
+ll /usr/local/bin/helm <br>
+chmod +x /usr/local/bin/helm <br>
+echo $PATH <br>
+export PATH=$PATH:/usr/local/bin
 # Vérifier la version de Helm
 helm version
 # Installer Prometheus et Grafana #
